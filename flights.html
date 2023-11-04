@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the Flights App!</h1>
+      <p>
+        Hello, <span id="username"></span>! <a href="#" id="logout">Logout</a>
+      </p>
+    </header>
+
+    <main>
+      <section class="search-container">
+        <label for="search">Search Flights:</label>
+        <input type="text" id="search" placeholder="Enter destination..." />
+        <button id="searchButton">Search</button>
+      </section>
+
+      <section class="flights-container">
+        <h2>Available Flights:</h2>
+        <ul id="flightList"></ul>
+      </section>
+    </main>
+
+    <script src="assets/scripts/flights.js"></script>
+  </body>
+</html>

@@ -4,6 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flights App</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <section class="form-container">
+        <form id="userForm">
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            autocomplete="username"
+            required
+          />
+          <div class="error-message" id="usernameError"></div>
+          <label for="email">Email:</label>
+          <input
+            type="text"
+            id="email"
+            autocomplete="email"
+            name="email"
+            required
+          />
+          <div class="error-message" id="emailError"></div>
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            autocomplete="new-password"
+            required
+          />
+          <div class="error-message" id="passwordError"></div>
+          <label for="isAdmin">Admin</label>
+          <input type="checkbox" name="isAdmin" id="isAdmin" />
+          <button type="submit">LogIn</button>
+        </form>
+      </section>
+    </main>
+    <script src="assets/scripts/authentication.js"></script>
+  </body>
 </html>
