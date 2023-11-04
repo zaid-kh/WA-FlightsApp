@@ -1,7 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
-    margin: 40px;
+    margin: 0;
+    padding: 0;
 }
 
 .form-container {
@@ -10,7 +11,7 @@ body {
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     width: 400px;
-    margin: 0 auto;
+    margin: 40px auto;
 }
 
 label {
@@ -58,4 +59,99 @@ input.error {
     font-size: 14px;
     margin-bottom: 20px;
     transition: color 0.3s ease;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#searchButton {
+    margin: 0 auto;
+    background-color: #333;
+    color: white;
+    padding: 11.5px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#searchButton:hover {
+    background-color: #767676;
+}
+
+#flightsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flight-card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.flight-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.flight-card h2 {
+    margin-bottom: 10px;
+}
+
+.flight-card p {
+    margin: 10px 0;
+}
+
+#logout {
+    color: #fdd;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#logout:hover {
+    text-decoration: underline;
+}
+
+.sort-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sort-container>* {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#clearSortButton {
+    background-color: salmon;
+
+}
+
+#sortButton:hover {
+    background-color: #45a049;
+}
+
+#clearSortButton:hover {
+    background-color: rgb(249, 82, 63);
 }

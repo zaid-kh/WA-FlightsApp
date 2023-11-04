@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <title>Flights App</title>
   </head>
   <body>
     <header>
@@ -15,17 +16,24 @@
 
     <main>
       <section class="search-container">
-        <label for="search">Search Flights:</label>
-        <input type="text" id="search" placeholder="Enter destination..." />
-        <button id="searchButton">Search</button>
+        <form id="searchForm" action="#">
+          <label for="search">Search Flights:</label>
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Enter destination..."
+          />
+          <button id="searchButton" type="submit">Search</button>
+        </form>
       </section>
-
-      <section class="flights-container">
-        <h2>Available Flights:</h2>
-        <ul id="flightList"></ul>
+      <section class="sort-container">
+        <button id="sortButton">Sort by Price</button>
+        <button id="clearSortButton">Clear</button>
       </section>
+      <section class="flights-container" id="flightsContainer"></section>
     </main>
 
-    <script src="assets/scripts/flights.js"></script>
+    <script type="module" src="assets/scripts/flights.js"></script>
   </body>
 </html>
